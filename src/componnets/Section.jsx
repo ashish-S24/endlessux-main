@@ -1,0 +1,39 @@
+import React, {useRef} from 'react'
+import Slider from './Slider'
+import Marquee from "react-fast-marquee";
+import { logos } from '../assets/company logos';
+import Character from './Character';
+
+function Section() {
+    
+    return (
+        <div className='bg-black relative overflow-hidden'>
+            <Slider/>
+            <div className='mt-[120px]'>
+                <span className='text-[145px] flex flex-col text-white font-stretch_pro font-extrabold leading-[170px]'>
+                    {/* <Character paragraph={'GOOD'}/>
+                    <Character paragraph={'DESIGN'}/> */}
+                    GOOD
+                    DESIGN
+                    <span className=' '>
+                        MADEEASY
+                    {/* <Character paragraph={'MADEEASY'}/> */}
+                    </span>
+                </span>
+            </div>
+            <div className='mt-[140px] h-32  bg-black'>
+                <Marquee className='h-full overflow-hidden' loop={0} autoFill={true} direction='right' gradient={true} gradientColor='black'>
+                    {logos.map((logo, index) =>{
+                        return (
+                            <div className>
+                                <img key={index} style={{aspectRatio:'3/2', objectFit:'contain', mixBlendMode:'color-burn'}} className='h-32 mx-8'  src={logo}/>
+                            </div>
+                        )
+                    })}
+                </Marquee>
+            </div>
+        </div>
+    )
+}
+
+export default Section
