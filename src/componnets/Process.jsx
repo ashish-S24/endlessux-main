@@ -27,7 +27,7 @@ function Process() {
                     <Character  paragraph={para_2}/>
                 </span>
             </div>
-            <div className=' text-second_grey font-underated text-[170px] p-4 mt-[50px]'>
+            <div className=' text-second_grey font-underated text-[170px] px-4 mt-[100px]'>
                 PROCESS
             </div>
         </div>

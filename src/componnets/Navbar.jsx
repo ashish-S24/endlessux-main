@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import MenuButton from './MenuButton'
+import { logo } from '../assets';
 import { AnimatePresence, motion } from 'framer-motion';
 import Nav from './Nav';
 import Magnetic from './Magnetic';
@@ -28,9 +29,11 @@ function Navbar() {
     setActive(!isActive);
  }
   return (
-    <div className=' absolute flex justify-between top-10 right-16  p-4 z-10 w-screen text-white'>
-      <div></div>
-      <div className=''>
+    <div className='absolute flex justify-between  top-10    z-10 w-[90vw] text-white'>
+      <div className='cursor-pointer' >
+        <img src={logo} className='left-20 '></img>
+      </div>
+      <div className='flex items-center'>
         <motion.div 
         className='w-[480px] h-[650px] bg-primary rounded-[25px] relative'
         variants={varients}

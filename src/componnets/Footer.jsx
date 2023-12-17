@@ -85,7 +85,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="flex flex-row mt-[90px]">
+      <div className="flex flex-row mt-[90px] h-[90px]">
         <div className="flex flex-row w-full m-2">
           <div className="flex flex-col">
           <span className="font-thin text-[15px] text-gray-400">

@@ -17,8 +17,10 @@ function App() {
   return (
     <>
       <div>
+        <div className='relative flex items-center justify-center bg-secondary'>
         <Navbar />
-       <Hero/>
+        <Hero/>
+        </div>
        <Section/>
        <Projects />
        <Process />
