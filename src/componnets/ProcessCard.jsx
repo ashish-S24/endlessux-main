@@ -17,7 +17,7 @@ function ProcessCard() {
         translateX: 0,
       },
       {
-        translateX: "-120vw",
+        translateX: "-209vw",
         ease: "none",
         duration: 1,
         scrollTrigger: {
@@ -50,35 +50,35 @@ function ProcessCard() {
               <span>WEEK 1</span>
               <span>WEEK 2</span>
             </div>
-            <div className='flex w-full relative'>
-              <div className='flex absolute z-10'>
-                <div className='relative'>
+            <div className='flex w-full relative mt-3'>
+              <div className='flex absolute z-10 w-full'>
+                <div className='w-[40%]'>
                   <ProcessLabels
                     title={"CONCEPTING"}
                     description={"We are looking for visuals and metaphors. Creating two concepts of page so you can choose"}
                     duration={'651px'}
                   />
                 </div>
-                <div className='relative left-12'>
+                <div className='ml-12 w-[80%]'>
                   <ProcessLabels
                     title={"DESIGN"}
                     description={"We are looking for visuals and metaphors. Creating two concepts of page so you can choose"}
-                    duration={'701px'}
+                    duration={'720px'}
                   />
                 </div>
               </div>
             </div>
             <div>
               <div className='mt-[150px] ml-12 flex w-full relative' >
-                <div className='absolute w-[197vw] flex'>
-                  <div className='w-[40%]'>
+                <div className='absolute w-[300vw] flex'>
+                  <div className='w-[20%]'>
                     <ProcessLabels
                       title={"CONTENT CREATION"}
                       description={"We are looking for visuals and metaphors. Creating two concepts of page so you can choose"}
                       duration={'850px'}
                     />
                   </div>
-                  <div className='ml-12 w-[80%]'>
+                  <div className='ml-12 w-[78%]'>
                     <ProcessLabels
                       title={"DEVELOPMENT"}
                       description={"We are looking for visuals and metaphors. Creating two concepts of page so you can choose"}
@@ -90,8 +90,12 @@ function ProcessCard() {
             </div>
           </div>
           <div className="w-[100vw] flex flex-col">
-            <div className='mt-5 ml-10 font-stretch_pro text-2xl flex justify-between'>
+            <div className='mt-5 ml-10 font-stretch_pro text-2xl flex justify-end items-end'>
               <span>WEEK 3</span>
+            </div>
+          </div>
+          <div className="w-[100vw] flex flex-col">
+            <div className='mt-5 ml-10 font-stretch_pro text-2xl flex justify-end items-end'>
               <span>WEEK 4</span>
             </div>
           </div>

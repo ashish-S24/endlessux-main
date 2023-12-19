@@ -9,7 +9,7 @@ const varients = {
   open:{
     width: 480,
     height: 650,
-    top:"-25px",
+    top:"-10px",
     right:"-25px",
     transition : {duration: 0.75, ease:[0.76, 0, 0.24 , 1]}
   },

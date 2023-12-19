@@ -12,8 +12,8 @@ function ProjectCards({ title, description, src, url, i , progress, range, targe
         <div className='top-0  flex flex-col items-center justify-center' style={{ height: '100vh', position: 'sticky' ,}}>
             <motion.div className='rounded-3xl w-full h-[80vh] p-8 flex bg-secondary relative' style={{ background: `${color}`, top: `calc(-5vh + ${i * 25}px)`, scale}}>
                 <div className='h-full w-[70%] flex flex-col p-4 justify-between'>
-                    <div className='h-[25vh] rounded-2xl border border-primary'>
-
+                    <div className='h-[270px] rounded-2xl'>
+                        <img className=' object-fit h-full w-full' src={src} />
                     </div>
                     <div className='text-white font-poppin text-[24px] text-justify'>
                         {description}

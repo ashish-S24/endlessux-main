@@ -17,7 +17,8 @@ export default {
       colors : {
         primary : "#CDE648",
         secondary:"#110725",
-        second_grey:"#CBC9D1"
+        second_grey:"#CBC9D1",
+        card_border: "#807F83"
       },
       aspectRatio: {
         '4/3': '3 / 4',
