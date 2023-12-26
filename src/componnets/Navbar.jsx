@@ -1,9 +1,9 @@
 import React, {useState} from 'react'
-import MenuButton from './MenuButton'
+import MenuButton from './Common/MenuButton'
 import { logo } from '../assets';
 import { AnimatePresence, motion } from 'framer-motion';
-import Nav from './Nav';
-import Magnetic from './Magnetic';
+import Nav from './Cards/Nav';
+import Magnetic from './Common/Magnetic';
 
 const varients = {
   open:{

@@ -1,7 +1,7 @@
 import { motion} from "framer-motion";
 import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import Magnetic from "./Magnetic";
+import Magnetic from "./Common/Magnetic";
 
 function Footer() {
   const container = useRef(null);
@@ -34,21 +34,21 @@ function Footer() {
   const [isHovered, setHovered] = useState(false);
   const [isEnter, setEnter] = useState(false);
   return (
- <motion.div className="bg-black relative">
-    <div className={`w-full px-5 relative `} >
-      <div className="flex flex-row justify-between items-end w-full h-[10vh]">
-        <div className="">
+ <motion.div className="bg-black relative px-[64px] border border-black">
+    <div className={`w-full px-5 relative`} >
+      <div className="flex flex-row justify-between items-end w-full h-[10vh] mt-10">
+        <div className="h-full flex items-center">
           <p className="text-white text-[18px] relative font-thin  flex flex-col" onMouseEnter={()=>setEnter(true)} onMouseLeave={()=>setEnter(false)}>
             Pune, India
           </p>
         </div>
-        <div className="flex justify-center h-[6vh] place-content-center ml-[100px]">
-          <span className="font-sans w-[30vh] flex items-center justify-around text-white text-[20px] border px-4 rounded-3xl border-primary">
-            <span className=" rounded-full h-3 w-3  bg-purple-800 shadow-purple-600"></span>
+        <div className="flex justify-center h-full items-center  ml-[100px]">
+          <span className="font-sans h-12 w-[30vh] flex items-center justify-around text-white text-[20px] border px-4 rounded-3xl border-primary">
+            <motion.span  animate={{ opacity: 1,}} initial={{opacity:0}} transition ={ {repeat : Infinity , type:"spring" , duration: 0.5}  } className=" rounded-full h-3 w-3  bg-purple-800 shadow-purple-600 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f,0_0_30px_#08f]"></motion.span>
           STAY IN TOUCH
           </span>
         </div>
-        <div className="flex justify-end">
+        <div className="flex justify-end items-center h-full">
           <span className="font-thin text-white text-[18px]">
             18.5204° N, 73.8567° E
           </span>

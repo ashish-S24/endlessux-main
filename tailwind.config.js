@@ -11,7 +11,8 @@ export default {
       'stretch_pro' : ['Stretch Pro', 'sans-serif'],
       'underated':[ 'Underrated' , 'sans-serif'],
       'poppin': ['Poppins', 'sans-serif'],
-      'syne':['Syne', 'sans-serif']
+      'syne':['Syne', 'sans-serif'],
+      'road_rage' : ['Road Rage' , 'sans-serif']
     },
     extend: {
       colors : {

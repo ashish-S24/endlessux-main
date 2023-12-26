@@ -14,3 +14,8 @@
     font-family: "stretch pro";
     src: url("./assets/fonts/StretchPro.otf");
 }
+
+@font-face {
+    font-family: "road rage";
+    src: url("./assets/fonts/Road_Rage.otf");
+}
