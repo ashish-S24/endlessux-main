@@ -1,7 +1,7 @@
 import { motion} from "framer-motion";
 import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import Magnetic from "./Common/Magnetic";
+import Magnetic from "./Magnetic";
 
 function Footer() {
   const container = useRef(null);
@@ -44,7 +44,7 @@ function Footer() {
         </div>
         <div className="flex justify-center h-full items-center  ml-[100px]">
           <span className="font-sans h-12 w-[30vh] flex items-center justify-around text-white text-[20px] border px-4 rounded-3xl border-primary">
-            <motion.span  animate={{ opacity: 1,}} initial={{opacity:0}} transition ={ {repeat : Infinity , type:"spring" , duration: 0.5}  } className=" rounded-full h-3 w-3  bg-purple-800 shadow-purple-600 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f,0_0_30px_#08f]"></motion.span>
+            <motion.span  animate={{ opacity: 1,}} initial={{opacity:0}} transition ={ {repeat : Infinity , type:"spring" , duration: 0.7}  } className=" rounded-full h-3 w-3  bg-purple-800 shadow-purple-600 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f,0_0_30px_#08f]"></motion.span>
           STAY IN TOUCH
           </span>
         </div>

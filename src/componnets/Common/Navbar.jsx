@@ -1,9 +1,9 @@
 import React, {useState} from 'react'
-import MenuButton from './Common/MenuButton'
-import { logo } from '../assets';
+import MenuButton from './MenuButton'
+import { logo } from '../../assets';
 import { AnimatePresence, motion } from 'framer-motion';
-import Nav from './Cards/Nav';
-import Magnetic from './Common/Magnetic';
+import Nav from '../Cards/Nav';
+import Magnetic from './Magnetic';
 
 const varients = {
   open:{
@@ -29,7 +29,7 @@ function Navbar() {
     setActive(!isActive);
  }
   return (
-    <div className='absolute flex justify-between  top-10    z-10 w-[90vw] text-white'>
+    <div className='absolute flex justify-between  top-10    z-20 w-[90vw] text-white'>
       <div className='cursor-pointer' >
         <img src={logo} className='left-20 '></img>
       </div>

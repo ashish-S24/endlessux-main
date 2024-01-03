@@ -1,7 +1,7 @@
 import React, {useRef} from 'react'
-import Slider from './Common/Slider'
+import Slider from '../Common/Slider'
 import Marquee from "react-fast-marquee";
-import { logos } from '../assets/company logos';
+import { logos } from '../../assets/company logos';
 import { useInView } from 'framer-motion';
 
 

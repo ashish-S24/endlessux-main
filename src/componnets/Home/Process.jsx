@@ -1,7 +1,7 @@
 import React from 'react'
-import Slider from './Common/Slider';
-import ProcessCard from './Cards/ProcessCard';
-import Character from './Common/Character';
+import Slider from '../Common/Slider';
+import ProcessCard from '../Cards/ProcessCard';
+import Character from '../Common/Character';
 
 
 function Process() {

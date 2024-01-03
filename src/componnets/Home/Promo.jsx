@@ -1,6 +1,6 @@
 import React, {useRef} from 'react';
 import ReactPlayer from 'react-player';
-import { promo } from '../assets';
+import { promo } from '../../assets';
 import { useInView } from 'framer-motion';
 
 

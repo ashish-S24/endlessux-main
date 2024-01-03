@@ -2,10 +2,10 @@ import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
-import { point_arrow } from '../assets';
+import { point_arrow } from '../../assets';
 import { progress } from 'framer-motion';
-import ServiceCard from './Cards/ServiceCard';
-import { services } from '../constant/services';
+import ServiceCard from '../Cards/ServiceCard';
+import { services } from '../../constant/services';
 import { useScroll, motion, useTransform, useInView} from 'framer-motion';
 
 gsap.registerPlugin(ScrollTrigger);

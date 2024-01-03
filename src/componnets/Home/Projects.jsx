@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { useScroll, motion, useInView, useTransform } from 'framer-motion';
-import ProjectCards from './Cards/ProjectCards';
-import { projects } from '../constant/projectData';
+import ProjectCards from '../Cards/ProjectCards';
+import { projects } from '../../constant/projectData';
 import { useRef } from 'react';
-import { point_arrow } from '../assets';
+import { point_arrow } from '../../assets';
 
 function Projects() {
     const container = useRef(null);

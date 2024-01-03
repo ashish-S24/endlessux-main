@@ -1,5 +1,5 @@
 import React, {useRef} from 'react';
-import { rotate_ele } from '../assets';
+import { rotate_ele } from '../../assets';
 import { motion , useInView } from 'framer-motion';
 import Spline from '@splinetool/react-spline';
 
