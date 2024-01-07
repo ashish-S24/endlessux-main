@@ -1,15 +1,12 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Navigate, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function ThumbnailCard({bg_image , logo , title , description, hight , logo_h , logo_w, link}) {
     const [isHover , setIsHover] = useState(false);
-    const navigate = useNavigate();
+   
 
-    const handleClick = () => {
-            navigate(`/projects/${link}`);
-    }
-
+    
     function handleHover(){
         setIsHover(!isHover);
     }
@@ -32,7 +29,7 @@ function ThumbnailCard({bg_image , logo , title , description, hight , logo_h , 
                 <div className='flex flex-col justify-center items-center w-full px-8'>
                     <h1 className=' font-poppin text-[24px] text-black font-semibold' >{title}</h1>
                     <p className=' font-poppin text-[14px] text-black text-center mt-10'>{description}</p>
-                    <button onClick={() => handleClick()} className='w-[166px] h-[44px] mt-10 flex items-center justify-center text-white bg-black font-poppin font-semibold text-[16px]'>Explore now</button>
+                    <Link to={`/projects/${link}`}><button  className='w-[166px] h-[44px] mt-10 flex items-center justify-center text-white bg-black font-poppin font-semibold text-[16px]'>Explore now</button></Link>
                 </div>
             </motion.div>
         </div>

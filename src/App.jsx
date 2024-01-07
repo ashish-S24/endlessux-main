@@ -1,18 +1,27 @@
-import { useState } from 'react'
+import { useEffect,  } from 'react'
 import Home from './pages/home';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route ,useLocation } from 'react-router-dom';
 import About from './pages/About';
 import Project from './pages/Project';
 import { Footer, Navbar } from './componnets';
 import {ProjectEstisource , ProjectOlienda , ProjectMorehealth, PorjectBiosens} from './pages/work'
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
 
 function App() {
   
 
   return (
     <Router>
+      <ScrollToTop />
       <Navbar/>
       <Routes>
         <Route index element={<Home />} />

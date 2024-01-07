@@ -4,6 +4,7 @@ import { logo } from '../../assets';
 import { AnimatePresence, motion } from 'framer-motion';
 import Nav from '../Cards/Nav';
 import Magnetic from './Magnetic';
+import { Link } from 'react-router-dom';
 
 const varients = {
   open:{
@@ -32,7 +33,7 @@ function Navbar() {
     <div className='w-full absolute flex flex-col top-0 items-center justify-center'>
     <div className='absolute flex justify-between  top-10  z-20 w-[90vw] text-white'>
       <div className='cursor-pointer' >
-        <img src={logo} className='left-20 '></img>
+       <Link to='/'> <img src={logo} className='left-20 '></img></Link>
       </div>
       <div className='flex items-center'>
         <motion.div 
