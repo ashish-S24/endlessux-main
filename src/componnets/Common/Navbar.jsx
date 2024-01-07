@@ -29,7 +29,8 @@ function Navbar() {
     setActive(!isActive);
  }
   return (
-    <div className='absolute flex justify-between  top-10    z-20 w-[90vw] text-white'>
+    <div className='w-full absolute flex flex-col top-0 items-center justify-center'>
+    <div className='absolute flex justify-between  top-10  z-20 w-[90vw] text-white'>
       <div className='cursor-pointer' >
         <img src={logo} className='left-20 '></img>
       </div>
@@ -46,6 +47,7 @@ function Navbar() {
         </motion.div>
        <MenuButton isActive={isActive} setActive={handleActive}/>
       </div>
+    </div>
     </div>
   )
 }

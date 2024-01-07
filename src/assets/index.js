@@ -6,6 +6,7 @@ import point_arrow from './Arrow-1-1.svg';
 import rotate_ele from './rotating_ele.svg';
 import insta from './insta.png';
 import linkedIn_icon from './linkedIn.png';
+import menu from './menu.svg';
 
 export {
     arrow,
@@ -14,5 +15,6 @@ export {
     point_arrow,
     rotate_ele,
     insta,
-    linkedIn_icon
+    linkedIn_icon,
+    menu
 }

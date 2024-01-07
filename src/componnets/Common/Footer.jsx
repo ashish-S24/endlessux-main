@@ -35,7 +35,7 @@ function Footer() {
   const [isEnter, setEnter] = useState(false);
   return (
  <motion.div className="bg-black relative px-[64px] border border-black">
-    <div className={`w-full px-5 relative`} >
+    <div className={`w-full  relative`} >
       <div className="flex flex-row justify-between items-end w-full h-[10vh] mt-10">
         <div className="h-full flex items-center">
           <p className="text-white text-[18px] relative font-thin  flex flex-col" onMouseEnter={()=>setEnter(true)} onMouseLeave={()=>setEnter(false)}>
@@ -85,8 +85,8 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="flex flex-row mt-[90px] h-[90px]">
-        <div className="flex flex-row w-full m-2">
+      <div className="flex flex-row mt-[90px] h-[90px] items-center">
+        <div className="flex flex-row w-full">
           <div className="flex flex-col">
           <span className="font-thin text-[15px] text-gray-400">
            VERSION
@@ -104,12 +104,12 @@ function Footer() {
           </span>
           </div>
         </div>
-        <div className="flex justify-end w-full">
+        <div className="flex justify-end w-full gap-4">
             {
                 socialLinks.map((item , index) =>{
                     return (
                       <Magnetic key={index}> 
-                      <div  className="rounded-full py-1 px-4 w-[136px] h-[50px] flex justify-center items-center m-2  border border-solid border-gray-400 text-white">
+                      <div  className="rounded-full py-1 px-4 w-[136px] h-[50px] flex justify-center items-center border border-solid border-gray-400 text-white">
                         <a className="font-sans font-light leading-normal text-center cursor-pointer text-base">
                           {item.name}
                         </a>

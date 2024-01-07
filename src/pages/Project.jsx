@@ -7,9 +7,6 @@ import ThumbnailCard from '../componnets/Cards/ThumbnailCard';
 function Project() {
     return (
         <div className='bg-black h-fit overflow-hidden'>
-            <div className='flex w-full justify-center'>
-                <Navbar />
-            </div>
             <div className='px-[64px]  mt-[200px]'>
                 <div className='flex justify-center items-center'>
                     <span className='relative  w-full flex items-center justify-center'>
@@ -21,12 +18,12 @@ function Project() {
                 </div>
                 <div className='h-fit flex mt-[80px] gap-4'>
                     <div className='w-full flex flex-col gap-4'>
-                        <ThumbnailCard bg_image={skin_bg} logo={skin_logo} logo_h={'83'} logo_w={'201'} hight={'677'} />
-                        <ThumbnailCard bg_image={coffe_bg} logo={coffe_logo} logo_h={'117'} logo_w={'117'} hight={'543'} />
+                        <ThumbnailCard bg_image={skin_bg} logo={skin_logo} logo_h={'83'} logo_w={'201'} hight={'677'} link={'Biosens'}/>
+                        <ThumbnailCard bg_image={coffe_bg} logo={coffe_logo} logo_h={'117'} logo_w={'117'} hight={'543'} link={'Olienda'}/>
                     </div>
                     <div className='w-full flex flex-col gap-4'>
-                        <ThumbnailCard bg_image={esti_bg} logo={esti_logo} logo_h={'107'} logo_w={'122'} hight={'364'} />
-                        <ThumbnailCard bg_image={green_bg} logo={green_logo} logo_h={'149'} logo_w={'183'} hight={'860'} />
+                        <ThumbnailCard bg_image={esti_bg} logo={esti_logo} logo_h={'107'} logo_w={'122'} hight={'364'} link={'Estisource'}/>
+                        <ThumbnailCard bg_image={green_bg} logo={green_logo} logo_h={'149'} logo_w={'18'} hight={'860'} link={'Morehealthcare'} />
                     </div>
                     <div className='w-full flex flex-col gap-4'>
                         <ThumbnailCard bg_image={photo_bg} logo={photo_logo} logo_h={'87'} logo_w={'100'} hight={'677'} />
@@ -36,9 +33,6 @@ function Project() {
             </div>
             <div className='w-full p-[64px] mt-[100px]'>
                 <div className='w-full h-[1px] bg-second_grey' />
-            </div>
-            <div className=''>
-                <Footer />
             </div>
         </div>
     )

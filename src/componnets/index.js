@@ -26,5 +26,5 @@ export {
     AboutHero,
     Testimonial,
     AboutMission,
-    Footer
+    Footer,
 }

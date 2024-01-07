@@ -33,7 +33,7 @@ function AboutHero() {
     ]
 
     return (
-        <div ref={container} className='h-fit bg-secondary flex flex-col items-center justify-center relative'>
+        <div ref={container} className='h-screen bg-secondary flex flex-col items-center justify-center relative mt-[100px]'>
             <Spline scene="https://prod.spline.design/pCAtMk9YcgHWLM6T/scene.splinecode" />
             <div className='relartive flex items-center justify-center h-full w-full'>
                 <div className='absolute top-0 flex flex-col justify-around h-full w-full p-[64px]'>

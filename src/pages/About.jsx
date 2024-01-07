@@ -8,7 +8,9 @@ import Spline from '@splinetool/react-spline';
 function About() {
   return (
     <div className='bg-black'>
+      <div className='border border-[#140629]' style={{backgroundColor:"#140629"}}>
         <AboutHero />
+      </div>
         <div className='bg-black h-fit p-[64px]'>
           <div className='flex items-center justify-center text-white text-[64px] font-underated gap-7'>
             <h1 className=''> Our team</h1>
@@ -35,9 +37,6 @@ function About() {
           <div className='w-full h-[1px] bg-second_grey'/>
         </div>
         <div className='bg-black'>
-          <div className=''>
-            <Footer />
-          </div>
         </div>
     </div>
   )

@@ -5,7 +5,6 @@ function Home() {
     return (
         <div>
             <div className='relative flex items-center justify-center bg-secondary'>
-                <Navbar />
                 <Hero />
             </div>
             <Section />
@@ -13,7 +12,6 @@ function Home() {
             <Services />
             <Projects />
             <Process />
-            <Footer />
         </div >
     )
 }

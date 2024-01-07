@@ -1,23 +1,32 @@
 import { useState } from 'react'
 import Home from './pages/home';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import About from './pages/About';
 import Project from './pages/Project';
+import { Footer, Navbar } from './componnets';
+import {ProjectEstisource , ProjectOlienda , ProjectMorehealth, PorjectBiosens} from './pages/work'
+
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
-    <BrowserRouter>
+    <Router>
+      <Navbar/>
       <Routes>
-        <Route>
-          <Route index element={<Home />} />
-          <Route path='about' element={<About />} />
-          <Route path='projects' element={<Project />} />
+        <Route index element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="projects">
+          <Route index element={<Project />} />
+          <Route path='Olienda' element={<ProjectOlienda/>} />
+          <Route path='Morehealthcare' element={<ProjectMorehealth />}/>
+          <Route path='Estisource' element={<ProjectEstisource />} />
+          <Route path='Biosens' element={<PorjectBiosens />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+      <Footer />
+    </Router>
   )
 }
 
