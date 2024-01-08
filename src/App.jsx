@@ -20,7 +20,7 @@ function App() {
   
 
   return (
-    <Router basename='/endlessux-main'>
+    <Router basename='/'>
       <ScrollToTop />
       <Navbar/>
       <Routes>
