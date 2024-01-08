@@ -20,7 +20,7 @@ function App() {
   
 
   return (
-    <Router>
+    <Router basename='/endlessux-main.vercel.app'>
       <ScrollToTop />
       <Navbar/>
       <Routes>
