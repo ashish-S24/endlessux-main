@@ -8,17 +8,8 @@ function AboutMission() {
         offset: ["start start", "end end"]
     });
 
-    const circle1Position = 4500; // Adjust the position of the first circle
-    const circle2Position = 1500; // Adjust the position of the second circle
-    const circle3Position = 2000;
-    const circle4Position = 2500;
-
-    const circle1Fill = scrollY.get >= circle1Position ? '#6435E3' : 'black';
-    const circle2Fill = scrollY >= circle2Position ? '#6435E3' : 'black';
-    const circle3Fill = scrollY >= circle3Position ? '#6435E3' : 'black';
-    const circle4Fill = scrollY >= circle4Position ? '#6435E3' : 'black';
-
-    console.log(scrollY);
+    
+   
     // Adjust the start and end points of the scrollYProgress range for each path
     const path1Progress = useTransform(scrollYProgress, [0, 0.3], [0, 1]);
     const circleFill1 = useTransform(scrollYProgress, [0, 0.4, 1], ['black', 'black', '#6435E3']);

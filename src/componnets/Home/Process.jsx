@@ -8,7 +8,7 @@ function Process() {
     const para_1 = "Four weeks of design and development start from the moment you fill up the brief";
     const para_2 = "We have a no-code and no-time-to-lose approach so that you get your page ASAP";
     return (
-        <div className=' bg-secondary overflow-hidden relative h-fit'>
+        <div className=' bg-secondary overflow-hidden relative h-fit mt-12'>
             <div className='absolute  bg-black w-screen h-20'></div>
             <div className='relative bg-black top-[160px]'>
                 <div className=' -rotate-3 overflow-hidden w-screen absolute opacity-[85%]'>

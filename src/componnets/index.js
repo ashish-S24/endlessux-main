@@ -11,7 +11,7 @@ import AboutSection from "./About/AboutSection";
 import AboutHero from "./About/AboutHero";
 import Testimonial from "./About/Testimonial";
 import AboutMission from "./About/AboutMission";
-
+import Preloader from "./Preloader";
 
 export {
     Navbar,
@@ -27,4 +27,5 @@ export {
     Testimonial,
     AboutMission,
     Footer,
+    Preloader
 }

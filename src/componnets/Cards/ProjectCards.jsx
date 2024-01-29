@@ -1,6 +1,7 @@
 import React from 'react';
 import LinkButton from '../Common/LinkButton';
 import { useTransform, motion, color } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 
 
@@ -10,7 +11,7 @@ function ProjectCards({ title, description, src, url, i , progress, range, targe
     
     return (
         <div className='top-0  flex flex-col items-center justify-center' style={{ height: '100vh', position: 'sticky' ,}}>
-            <motion.div className='rounded-3xl w-full h-[699px] p-8 flex bg-secondary relative mt-14' style={{ background: `${color}`, top: `calc(-5vh + ${i * 25}px)`, scale}}>
+            <motion.div className='rounded-3xl w-full h-[699px] p-8 flex bg-secondary relative mt-14' style={{ background: `${color}`, top: `calc(-5vh + ${i * 30}px)`, scale}}>
                 <div className='h-full w-[70%] flex flex-col p-4 justify-between'>
                     <div className='h-[270px] rounded-2xl'>
                         <img className=' object-fit h-full w-full' src={src} />
@@ -19,8 +20,14 @@ function ProjectCards({ title, description, src, url, i , progress, range, targe
                         {description}
                     </div>
                     <div className='flex items-center'>
-                        <p className='text-white font-underated text-[84px]'>{title}</p>
-                        <LinkButton />
+                        <div className='w-fit'>
+                            <p className='text-white font-underated text-[84px] leading-[90px]'>{title}</p>
+                        </div>
+                        <div>
+                            <Link to={url}>
+                                <LinkButton />
+                            </Link>
+                        </div>
                     </div>
                 </div>
                 <div className='p-4 w-[30%] flex justify-end'>

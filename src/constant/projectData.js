@@ -1,4 +1,4 @@
-import { project_1, project_2, project_3, vid_1 ,vid_2 } from "../assets/project"
+import { project_1, project_2, project_3, project_4, vid_1 ,vid_2 } from "../assets/project"
 
 
 export const projects = [
@@ -13,9 +13,9 @@ export const projects = [
 
       vid_src: vid_1,
   
-      link: "https://www.ignant.com/2023/03/25/ad2186-matthias-leidingers-photographic-exploration-of-awe-and-wonder/",
+      link: "/projects/Biosens",
   
-      color:"#7A5240"
+      color:"#7C4732"
   
     },
   
@@ -29,7 +29,7 @@ export const projects = [
 
       vid_src: vid_2,
   
-      link: "https://www.ignant.com/2022/09/30/clement-chapillon-questions-geographical-and-mental-isolation-with-les-rochers-fauves/",
+      link: "/projects/Estisource",
     
       color:"#5B9DFE"
   
@@ -37,7 +37,7 @@ export const projects = [
   
     {
   
-      title: "Apexion",
+      title: "More Healthcare",
   
       description: "Estisource—an app for precise cost estimates of mechanical parts. Simplifying the complexity, it's your go-to for accurate figures.",
   
@@ -45,10 +45,25 @@ export const projects = [
 
       vid_src:"",
   
-      link: "https://www.ignant.com/2023/10/28/capturing-balis-many-faces-zissou-documents-the-sacred-and-the-mundane-of-a-fragile-island/",
+      link: "/projects/Morehealthcare",
   
-       color:"#C49906"
+       color:"#195A00"
     },
+    {
   
+      title: "Olienda",
+  
+      description: "Estisource—an app for precise cost estimates of mechanical parts. Simplifying the complexity, it's your go-to for accurate figures.",
+  
+      src: project_4,
+
+      vid_src:"",
+  
+      link: "/projects/Olienda",
+  
+       color:"#FF9F0D"
+    },
+    
+
   
   ]

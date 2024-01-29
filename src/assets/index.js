@@ -7,6 +7,7 @@ import rotate_ele from './rotating_ele.svg';
 import insta from './insta.png';
 import linkedIn_icon from './linkedIn.png';
 import menu from './menu.svg';
+import alien_load from './alien_load.svg';
 
 export {
     arrow,
@@ -16,5 +17,6 @@ export {
     rotate_ele,
     insta,
     linkedIn_icon,
-    menu
+    menu,
+    alien_load
 }

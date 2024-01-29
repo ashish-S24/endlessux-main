@@ -26,7 +26,7 @@ function Projects() {
                 {
                     projects.map((project, i) => {
                         const targetScale = 1 - ((projects.length - i) * 0.1);
-                        return <ProjectCards key={`p_${i}`} {...project} i={i} {...project} progress={scrollYProgress} range={[i * 0.1, 2]} targetScale={targetScale} color={project.color} src={project.src} vid_src={project.vid_src} />
+                        return <ProjectCards key={`p_${i}`} {...project} i={i} {...project} progress={scrollYProgress} range={[i * 0.1, 2]} targetScale={targetScale} color={project.color} src={project.src} vid_src={project.vid_src} url={project.link}/>
                     })
                 }
             </div>

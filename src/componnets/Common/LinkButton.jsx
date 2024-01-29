@@ -35,7 +35,7 @@ function LinkButton() {
     }
   return (
     <Magnetic>
-    <motion.div onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)} className='rounded-full h-20 w-20 bg-primary ml-5 relative overflow-hidden flex items-center justify-center'>
+    <motion.div onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)} className='rounded-full h-20 w-20  bg-primary ml-5 relative overflow-hidden flex items-center justify-center'>
         <div className='relative h-16 w-16'>
             <motion.img variants={arrow_2} animate={isHovered ? 'enter' : 'exit'} className='absolute h-16 w-16' src={arro_2}></motion.img>
             <motion.img variants={arrow_1} animate={isHovered ? 'enter' : 'exit'} className=' absolute h-16 ' src={arro_2}></motion.img>

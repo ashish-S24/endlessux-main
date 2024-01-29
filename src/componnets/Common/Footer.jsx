@@ -34,7 +34,7 @@ function Footer() {
   const [isHovered, setHovered] = useState(false);
   const [isEnter, setEnter] = useState(false);
   return (
- <motion.div className="bg-black relative px-[64px] border border-black">
+ <motion.div className="bg-black relative px-[64px] border border-black" id="contact">
     <div className={`w-full  relative`} >
       <div className="flex flex-row justify-between items-end w-full h-[10vh] mt-10">
         <div className="h-full flex items-center">

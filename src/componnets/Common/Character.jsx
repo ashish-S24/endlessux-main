@@ -9,7 +9,6 @@ function Character({paragraph}) {
   })
 
   const words = paragraph.split(" ")
-  console.log(words);
   return (
     <p 
       ref={container}

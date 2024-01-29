@@ -20,12 +20,12 @@ function Section() {
                     <span className=' font-stretch_pro' style={{transform: isInView ? "none" : "translateY(50px)", opacity:isInView? 1 : 0, transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.7s"}}>MADEEASY</span>
                 </span>
             </div>
-            <div className='mt-[100px] h-32  bg-black'>
+            <div className='mt-[100px] h-fit  bg-black'>
                 <Marquee className='h-full overflow-hidden' loop={0} autoFill={true} direction='right' gradient={true} gradientColor='black'>
                     {logos.map((logo, index) =>{
                         return (
-                            <div className>
-                                <img key={index} style={{aspectRatio:'3/2', objectFit:'contain', mixBlendMode:'color-burn'}} className='h-32 mx-8'  src={logo}/>
+                            <div key={index} className='flex justify-center items-center'>
+                                <img  style={{ objectFit:'fill', mixBlendMode:'color-burn'}} className='mx-8'  src={logo}/>
                             </div>
                         )
                     })}

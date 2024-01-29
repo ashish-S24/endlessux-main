@@ -34,9 +34,9 @@ function Services() {
         <div className='mt-14 w-full'>
           <div className='w-full  grid grid-cols-2 gap-20'>
              {
-                services.map((service) => {
+                services.map((service, i) => {
                    return (
-                      <ServiceCard icon={service.icon} title={service.title} description={service.description}/>
+                      <ServiceCard key={i} icon={service.icon} title={service.title} description={service.description}/>
                    )
                 })
              }

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navbar, Footer } from '../componnets';
-import { skin_bg, skin_logo, esti_bg, esti_logo, green_bg, green_logo, photo_bg, photo_logo, coffe_bg, coffe_logo, brain_bg, brain_logo } from '../assets/project pages';
+import { skin_bg, esti_bg, green_bg, photo_bg, coffe_bg, brain_bg } from '../assets/project pages';
 import ThumbnailCard from '../componnets/Cards/ThumbnailCard';
 
 
@@ -18,15 +18,15 @@ function Project() {
                 </div>
                 <div className='h-fit flex mt-[80px] gap-4'>
                     <div className='w-full flex flex-col gap-4'>
-                        <ThumbnailCard bg_image={skin_bg} logo={skin_logo} logo_h={'83'} logo_w={'201'} hight={'677'} link={'Biosens'}/>
-                        <ThumbnailCard bg_image={coffe_bg} logo={coffe_logo} logo_h={'117'} logo_w={'117'} hight={'543'} link={'Olienda'}/>
+                        <ThumbnailCard bg_image={skin_bg}   hight={'677'} link={'Biosens'}/>
+                        <ThumbnailCard bg_image={coffe_bg}   hight={'543'} link={'Olienda'}/>
                     </div>
                     <div className='w-full flex flex-col gap-4'>
-                        <ThumbnailCard bg_image={esti_bg} logo={esti_logo} logo_h={'107'} logo_w={'122'} hight={'364'} link={'Estisource'}/>
-                        <ThumbnailCard bg_image={green_bg} logo={green_logo} logo_h={'149'} logo_w={'18'} hight={'860'} link={'Morehealthcare'} />
+                        <ThumbnailCard bg_image={esti_bg}   hight={'364'} link={'Estisource'}/>
+                        <ThumbnailCard bg_image={green_bg}   hight={'860'} link={'Morehealthcare'} />
                     </div>
                     <div className='w-full flex flex-col gap-4'>
-                        <ThumbnailCard bg_image={photo_bg} logo={photo_logo} logo_h={'87'} logo_w={'100'} hight={'677'} />
+                        <ThumbnailCard bg_image={photo_bg}   hight={'677'} />
                         <ThumbnailCard bg_image={brain_bg} hight={'543'} title={'Braincheck'} description={'We are a team of engineering students specializing in machine learning and deep learning. Our focus is on developing projects that make a positive impact on the community. Our work ranges from creating predictive models for healthcare to image recognition systems for security purposes'} />
                     </div>
                 </div>
