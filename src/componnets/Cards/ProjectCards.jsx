@@ -1,13 +1,19 @@
 import React from 'react';
 import LinkButton from '../Common/LinkButton';
 import { useTransform, motion, color } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 
 function ProjectCards({ title, description, src, url, i , progress, range, targetScale , color, vid_src}) {
   
     const scale = useTransform(progress, range , [1 , targetScale]);
+
+    const navigate = useNavigate();
+
+    function handleNavigate(url){
+            navigate(url);
+    }
     
     return (
         <div className='top-0  flex flex-col items-center justify-center' style={{ height: '100vh', position: 'sticky' ,}}>
@@ -23,10 +29,8 @@ function ProjectCards({ title, description, src, url, i , progress, range, targe
                         <div className='w-fit'>
                             <p className='text-white font-underated text-[84px] leading-[90px]'>{title}</p>
                         </div>
-                        <div>
-                            <Link to={url}>
-                                <LinkButton />
-                            </Link>
+                        <div onClick={() => handleNavigate(url)}>
+                            <LinkButton />
                         </div>
                     </div>
                 </div>

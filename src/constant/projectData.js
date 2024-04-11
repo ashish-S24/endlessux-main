@@ -13,7 +13,7 @@ export const projects = [
 
       vid_src: vid_1,
   
-      link: "/projects/Biosens",
+      link: "/projects",
   
       color:"#7C4732"
   
@@ -29,7 +29,7 @@ export const projects = [
 
       vid_src: vid_2,
   
-      link: "/projects/Estisource",
+      link: "/projects",
     
       color:"#5B9DFE"
   
@@ -45,7 +45,7 @@ export const projects = [
 
       vid_src:"",
   
-      link: "/projects/Morehealthcare",
+      link: "/projects",
   
        color:"#195A00"
     },
@@ -59,7 +59,7 @@ export const projects = [
 
       vid_src:"",
   
-      link: "/projects/Olienda",
+      link: "/projects",
   
        color:"#FF9F0D"
     },

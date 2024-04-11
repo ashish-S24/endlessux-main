@@ -37,14 +37,12 @@ function App() {
           <Navbar />
           <Routes>
             <Route index element={<Home />} />
-            <Route path="about" element={<About />} />
-            <Route path="projects">
-              <Route index element={<Project />} />
-              <Route path='Olienda' element={<ProjectOlienda />} />
-              <Route path='Morehealthcare' element={<ProjectMorehealth />} />
-              <Route path='Estisource' element={<ProjectEstisource />} />
-              <Route path='Biosens' element={<PorjectBiosens />} />
-            </Route>
+            <Route path="/about" element={<About />} />
+            <Route  path='/projects' element={<Project />} />
+            <Route path='/projects/Olienda' element={<ProjectOlienda />} />
+            <Route path='/projects/Morehealthcare' element={<ProjectMorehealth />} />
+            <Route path='/projects/Estisource' element={<ProjectEstisource />} />
+            <Route path='/projects/Biosens' element={<PorjectBiosens />} />
           </Routes>
           <Footer />
         </Router>

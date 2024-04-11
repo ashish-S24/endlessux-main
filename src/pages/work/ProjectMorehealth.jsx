@@ -155,13 +155,13 @@ export default function ProjectMorehealth() {
         <div className='mt-[200px] mb-[100px]'>
           <div className='w-full h-[1px] bg-white'></div>
           <div className='w-full flex items-center justify-between mt-4 '>
-            <Link to='/project/Biosense' className='w-full'>
+            <Link to='/projects/Olienda' className='w-full'>
               <div className='relative w-full px-8 flex flex-col items-start justify-center'>
                 <h2 className=' font-poppin text-[16px] text-[#ADADAD] ml-5'>Previous</h2>
                 <svg className='absolute z-20 left-0 ' width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M11.8752 15.7705L6.71354 10.6088C6.10395 9.99922 6.10395 9.00172 6.71354 8.39214L11.8752 3.23047" stroke="white" stroke-width="1.1875" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
-                <h1 className=' font-poppin text-[16px] text-white mt-2 ml-5'>Biosense</h1>
+                <h1 className=' font-poppin text-[16px] text-white mt-2 ml-5'>Olienda</h1>
               </div>
             </Link>
             <Link to='/projects' className='w-full'>
@@ -169,13 +169,13 @@ export default function ProjectMorehealth() {
                 <img src={menu} />
               </div>
             </Link>
-            <Link to='/projects' className='w-full'>
+            <Link to='/projects/Estisource' className='w-full'>
               <div className='relative w-full  px-8 flex flex-col items-end justify-center'>
                 <h2 className=' font-poppin text-[16px] text-[#ADADAD] mr-5'>Next</h2>
                 <svg className='absolute z-20 right-0 rotate-180' width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M11.8752 15.7705L6.71354 10.6088C6.10395 9.99922 6.10395 9.00172 6.71354 8.39214L11.8752 3.23047" stroke="white" stroke-width="1.1875" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
-                <h1 className=' font-poppin text-[16px] text-white mt-2 mr-5'>Apexion Photography</h1>
+                <h1 className=' font-poppin text-[16px] text-white mt-2 mr-5'>Estisource</h1>
               </div>
             </Link>
           </div>
